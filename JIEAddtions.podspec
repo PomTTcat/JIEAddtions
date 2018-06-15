@@ -39,9 +39,16 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "JEMainFile/**/*.{h,m}"
+  # s.source_files  = "JEMainFile/**/*.{h,m}"
   s.exclude_files = "cocoDemo"
 
+  s.subspec 'JEAddtions' do |ss|
+    ss.source_files = 'JEMainFile/JEAddtions/*.{h,m}'
+  end
+
+  s.subspec 'JEModel' do |ss|
+    ss.source_files = 'JEMainFile/JEModel/*.{h,m}'
+  end
   # s.public_header_files = "Classes/**/*.h"
 
 
