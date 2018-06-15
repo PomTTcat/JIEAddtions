@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
 
 
   s.name         = "JIEAddtions"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "Some Category for iOS"
   s.description  = <<-DESC
                    Some Category for iOS Desc
@@ -40,7 +40,7 @@ Pod::Spec.new do |s|
   #
 
   s.source_files  = "JEMainFile/JEAddtions/*.{h,m}","JEMainFile/JEModel/*.{h,m}"
-  # s.exclude_files = "Classes/Exclude"
+  s.exclude_files = "cocoDemo"
 
   # s.public_header_files = "Classes/**/*.h"
 
