@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
 
 
   s.name         = "JIEAddtions"
-  s.version      = "0.0.3"
+  s.version      = "0.0.6"
   s.summary      = "Some Category for iOS"
   s.description  = <<-DESC
                    Some Category for iOS Desc
