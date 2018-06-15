@@ -8,22 +8,10 @@
 
 Pod::Spec.new do |s|
 
-  # ―――  Spec Metadata  ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  #
-  #  These will help people to find your library, and whilst it
-  #  can feel like a chore to fill in it's definitely to your advantage. The
-  #  summary should be tweet-length, and the description more in depth.
-  #
 
   s.name         = "JIEAddtions"
   s.version      = "0.0.1"
   s.summary      = "Some Category for iOS"
-
-  # This description is used to generate tags and improve search results.
-  #   * Think: What does it do? Why did you write it? What is the focus?
-  #   * Try to keep it short, snappy and to the point.
-  #   * Write the description between the DESC delimiters below.
-  #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
                    Some Category for iOS Desc
                    DESC
@@ -36,7 +24,7 @@ Pod::Spec.new do |s|
   # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
 
 
-  s.author             = { "studentBGY" => "craftsmanb6@gmail.com" }
+  s.author       = { "studentBGY" => "craftsmanb6@gmail.com" }
 
 
   s.platform     = :ios, "8.0"
@@ -51,7 +39,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "JEMainFile/*/*.{h,m}"
+  s.source_files  = "JEMainFile/JEAddtions/*.{h,m}"
   s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
