@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
 
 
   s.name         = "JIEAddtions"
-  s.version      = "0.0.2"
+  s.version      = "0.0.3"
   s.summary      = "Some Category for iOS"
   s.description  = <<-DESC
                    Some Category for iOS Desc
@@ -39,7 +39,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "JEMainFile/JEAddtions/*.{h,m}","JEMainFile/JEModel/*.{h,m}"
+  s.source_files  = "JEMainFile/**/*.{h,m}"
   s.exclude_files = "cocoDemo"
 
   # s.public_header_files = "Classes/**/*.h"
