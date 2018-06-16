@@ -15,8 +15,9 @@
 		18AB9F7F20D3F8530005E7B7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AB9F7E20D3F8530005E7B7 /* main.m */; };
 		18AB9F8920D3F8530005E7B7 /* cocoDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AB9F8820D3F8530005E7B7 /* cocoDemoTests.m */; };
 		18AB9F9420D3F8530005E7B7 /* cocoDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AB9F9320D3F8530005E7B7 /* cocoDemoUITests.m */; };
-		18AB9FA820D3F87E0005E7B7 /* UINavigationController+customOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AB9FA320D3F87D0005E7B7 /* UINavigationController+customOperation.m */; };
-		18AB9FA920D3F87E0005E7B7 /* JEBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AB9FA620D3F87D0005E7B7 /* JEBaseModel.m */; };
+		18AB9FBA20D4B7070005E7B7 /* JEBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AB9FB820D4B7060005E7B7 /* JEBaseModel.m */; };
+		18AB9FBB20D4B7070005E7B7 /* UINavigationController+customOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AB9FB920D4B7060005E7B7 /* UINavigationController+customOperation.m */; };
+		18AB9FBE20D4B7580005E7B7 /* JEGlobal.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AB9FBD20D4B7580005E7B7 /* JEGlobal.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,10 +54,12 @@
 		18AB9F8F20D3F8530005E7B7 /* cocoDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = cocoDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18AB9F9320D3F8530005E7B7 /* cocoDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = cocoDemoUITests.m; sourceTree = "<group>"; };
 		18AB9F9520D3F8530005E7B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		18AB9FA320D3F87D0005E7B7 /* UINavigationController+customOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+customOperation.m"; sourceTree = "<group>"; };
-		18AB9FA420D3F87D0005E7B7 /* UINavigationController+customOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+customOperation.h"; sourceTree = "<group>"; };
-		18AB9FA620D3F87D0005E7B7 /* JEBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JEBaseModel.m; sourceTree = "<group>"; };
-		18AB9FA720D3F87D0005E7B7 /* JEBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JEBaseModel.h; sourceTree = "<group>"; };
+		18AB9FB620D4B7060005E7B7 /* UINavigationController+customOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+customOperation.h"; sourceTree = "<group>"; };
+		18AB9FB720D4B7060005E7B7 /* JEBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JEBaseModel.h; sourceTree = "<group>"; };
+		18AB9FB820D4B7060005E7B7 /* JEBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JEBaseModel.m; sourceTree = "<group>"; };
+		18AB9FB920D4B7060005E7B7 /* UINavigationController+customOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+customOperation.m"; sourceTree = "<group>"; };
+		18AB9FBC20D4B7580005E7B7 /* JEGlobal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JEGlobal.h; sourceTree = "<group>"; };
+		18AB9FBD20D4B7580005E7B7 /* JEGlobal.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JEGlobal.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,29 +145,15 @@
 		18AB9FA120D3F87D0005E7B7 /* JEMainFile */ = {
 			isa = PBXGroup;
 			children = (
-				18AB9FA220D3F87D0005E7B7 /* JEAddtions */,
-				18AB9FA520D3F87D0005E7B7 /* JEModel */,
+				18AB9FB720D4B7060005E7B7 /* JEBaseModel.h */,
+				18AB9FB820D4B7060005E7B7 /* JEBaseModel.m */,
+				18AB9FB620D4B7060005E7B7 /* UINavigationController+customOperation.h */,
+				18AB9FB920D4B7060005E7B7 /* UINavigationController+customOperation.m */,
+				18AB9FBC20D4B7580005E7B7 /* JEGlobal.h */,
+				18AB9FBD20D4B7580005E7B7 /* JEGlobal.m */,
 			);
 			name = JEMainFile;
 			path = ../../JEMainFile;
-			sourceTree = "<group>";
-		};
-		18AB9FA220D3F87D0005E7B7 /* JEAddtions */ = {
-			isa = PBXGroup;
-			children = (
-				18AB9FA320D3F87D0005E7B7 /* UINavigationController+customOperation.m */,
-				18AB9FA420D3F87D0005E7B7 /* UINavigationController+customOperation.h */,
-			);
-			path = JEAddtions;
-			sourceTree = "<group>";
-		};
-		18AB9FA520D3F87D0005E7B7 /* JEModel */ = {
-			isa = PBXGroup;
-			children = (
-				18AB9FA620D3F87D0005E7B7 /* JEBaseModel.m */,
-				18AB9FA720D3F87D0005E7B7 /* JEBaseModel.h */,
-			);
-			path = JEModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -297,11 +286,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18AB9FA820D3F87E0005E7B7 /* UINavigationController+customOperation.m in Sources */,
-				18AB9FA920D3F87E0005E7B7 /* JEBaseModel.m in Sources */,
+				18AB9FBB20D4B7070005E7B7 /* UINavigationController+customOperation.m in Sources */,
+				18AB9FBE20D4B7580005E7B7 /* JEGlobal.m in Sources */,
 				18AB9F7420D3F8510005E7B7 /* ViewController.m in Sources */,
 				18AB9F7F20D3F8530005E7B7 /* main.m in Sources */,
 				18AB9F7120D3F8510005E7B7 /* AppDelegate.m in Sources */,
+				18AB9FBA20D4B7070005E7B7 /* JEBaseModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

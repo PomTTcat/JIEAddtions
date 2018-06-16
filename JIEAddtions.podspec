@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
 
 
   s.name         = "JIEAddtions"
-  s.version      = "0.0.7"
+  s.version      = "0.0.8"
   s.summary      = "Some Category for iOS"
   s.description  = <<-DESC
                    Some Category for iOS Desc
@@ -48,6 +48,10 @@ Pod::Spec.new do |s|
 
   s.subspec 'JEModel' do |ss|
     ss.source_files = 'JEMainFile/JE*.{h,m}'
+  end
+
+  s.subspec 'JEGlobal' do |ss|
+    ss.source_files = 'JEMainFile/JEGlobal.{h,m}'
   end
   # s.public_header_files = "Classes/**/*.h"
 
