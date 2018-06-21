@@ -18,6 +18,7 @@
 		18AB9FBA20D4B7070005E7B7 /* JEBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AB9FB820D4B7060005E7B7 /* JEBaseModel.m */; };
 		18AB9FBB20D4B7070005E7B7 /* UINavigationController+customOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AB9FB920D4B7060005E7B7 /* UINavigationController+customOperation.m */; };
 		18AB9FBE20D4B7580005E7B7 /* JEGlobal.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AB9FBD20D4B7580005E7B7 /* JEGlobal.m */; };
+		18AB9FD220DB85DE0005E7B7 /* JECollectionViewHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AB9FD120DB85DE0005E7B7 /* JECollectionViewHelper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,8 @@
 		18AB9FB920D4B7060005E7B7 /* UINavigationController+customOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+customOperation.m"; sourceTree = "<group>"; };
 		18AB9FBC20D4B7580005E7B7 /* JEGlobal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JEGlobal.h; sourceTree = "<group>"; };
 		18AB9FBD20D4B7580005E7B7 /* JEGlobal.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JEGlobal.m; sourceTree = "<group>"; };
+		18AB9FD020DB85DE0005E7B7 /* JECollectionViewHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JECollectionViewHelper.h; sourceTree = "<group>"; };
+		18AB9FD120DB85DE0005E7B7 /* JECollectionViewHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JECollectionViewHelper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,9 +154,19 @@
 				18AB9FB920D4B7060005E7B7 /* UINavigationController+customOperation.m */,
 				18AB9FBC20D4B7580005E7B7 /* JEGlobal.h */,
 				18AB9FBD20D4B7580005E7B7 /* JEGlobal.m */,
+				18AB9FCF20DB85DE0005E7B7 /* helper */,
 			);
 			name = JEMainFile;
 			path = ../../JEMainFile;
+			sourceTree = "<group>";
+		};
+		18AB9FCF20DB85DE0005E7B7 /* helper */ = {
+			isa = PBXGroup;
+			children = (
+				18AB9FD020DB85DE0005E7B7 /* JECollectionViewHelper.h */,
+				18AB9FD120DB85DE0005E7B7 /* JECollectionViewHelper.m */,
+			);
+			path = helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -286,6 +299,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18AB9FD220DB85DE0005E7B7 /* JECollectionViewHelper.m in Sources */,
 				18AB9FBB20D4B7070005E7B7 /* UINavigationController+customOperation.m in Sources */,
 				18AB9FBE20D4B7580005E7B7 /* JEGlobal.m in Sources */,
 				18AB9F7420D3F8510005E7B7 /* ViewController.m in Sources */,
