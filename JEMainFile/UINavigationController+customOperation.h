@@ -2,8 +2,7 @@
 
 @interface UINavigationController (customOperation)
 
-// version 0.0.2
-// 0.0.5
+// version 0.0.10
 /**
  如果navigation堆栈里有同名控制器，则pop到该控制器。如果没有，则简单pop。
  如果有多个控制类名相同，则pop到最前面的VC
