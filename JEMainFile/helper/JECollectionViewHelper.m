@@ -10,12 +10,9 @@
 
 @interface JECollectionViewHelper ()
 
-@property (strong, nonatomic)   UICollectionView    *collectionView;
-@property (strong, nonatomic)   NSMutableArray      *collectionArray; //这个属性用不到
-
 //block
-@property (copy, nonatomic)     JENumberOfSectionsBlock          sectionsBlock;
-@property (copy, nonatomic)     JENumberOfItemsInSectionBlock    itemsInSectionBlock;
+@property (copy, nonatomic)     JECollectionSectionsBlock          sectionsBlock;
+@property (copy, nonatomic)     JECollectionItemsInSectionBlock    itemsInSectionBlock;
 @property (copy, nonatomic)     JELoadCollectionViewCellBlock    loadCellBlock;
 @property (copy, nonatomic)     JECollectionViewDidSelectBlock   didSelectBlock;
 
@@ -37,8 +34,8 @@
     return self;
 }
 
-- (void)initNumberOfSection:(JENumberOfSectionsBlock)numberOfSectionsBlock
-     numberOfItemsInSection:(JENumberOfItemsInSectionBlock)numberOfItemsInSection
+- (void)initNumberOfSection:(JECollectionSectionsBlock)numberOfSectionsBlock
+     numberOfItemsInSection:(JECollectionItemsInSectionBlock)numberOfItemsInSection
      loadCollectionViewCell:(JELoadCollectionViewCellBlock)loadCellBlock
           addDidSelectBlock:(JECollectionViewDidSelectBlock)didSelectBlock {
 
@@ -81,7 +78,6 @@
     if (!self.loadCellBlock) {
         return nil;
     }
-    
     return self.loadCellBlock(collectionView, indexPath);
 }
 

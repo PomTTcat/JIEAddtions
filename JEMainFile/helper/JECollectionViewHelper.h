@@ -9,15 +9,20 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-typedef NSInteger (^JENumberOfSectionsBlock) (UICollectionView *collectionView);
-typedef NSInteger (^JENumberOfItemsInSectionBlock) (UICollectionView *collectionView, NSInteger section);
+typedef NSInteger (^JECollectionSectionsBlock) (UICollectionView *collectionView);
+typedef NSInteger (^JECollectionItemsInSectionBlock) (UICollectionView *collectionView, NSInteger section);
 typedef UICollectionViewCell * (^JELoadCollectionViewCellBlock) (UICollectionView *collectionView, NSIndexPath *indexPath);
 typedef void (^JECollectionViewDidSelectBlock) (UICollectionView *collectionView, NSIndexPath *indexPath);
 
+
 /**
- 改helper只封装了最简单的代理和数据源。如果需要实现更复杂的代理。别用这个。
+ 改helper只封装了最简单的代理和数据源。如果需要实现更复杂的代理,可以自己继承JECollectionViewHelper，并补充。
  */
 @interface JECollectionViewHelper : NSObject <UICollectionViewDelegate,UICollectionViewDataSource>
+
+@property (strong, nonatomic)   UICollectionView    *collectionView;
+@property (strong, nonatomic)   NSMutableArray      *collectionArray;
+
 
 /**
  load collectionViewFlowLayout
@@ -45,8 +50,8 @@ typedef void (^JECollectionViewDidSelectBlock) (UICollectionView *collectionView
  @param loadCellBlock 加载cell的block
  @param didSelectBlock 点击事件block
  */
-- (void)initNumberOfSection:(JENumberOfSectionsBlock)numberOfSectionsBlock
-     numberOfItemsInSection:(JENumberOfItemsInSectionBlock)numberOfItemsInSection
+- (void)initNumberOfSection:(JECollectionSectionsBlock)numberOfSectionsBlock
+     numberOfItemsInSection:(JECollectionItemsInSectionBlock)numberOfItemsInSection
      loadCollectionViewCell:(JELoadCollectionViewCellBlock)loadCellBlock
           addDidSelectBlock:(JECollectionViewDidSelectBlock)didSelectBlock;
 
