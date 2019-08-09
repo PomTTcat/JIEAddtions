@@ -19,6 +19,7 @@
     
     JEBaseModel *model = [JEBaseModel new];
     // Do any additional setup after loading the view, typically from a nib.
+    NSLog(@"Test Git %s",__func__);
 }
 
 
